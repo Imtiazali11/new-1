@@ -21,10 +21,11 @@ body {
 }
 .nav-links {
     list-style: none;
-    display: flex;
+  
 }
 .nav-links li {
     margin-left: 2rem;
+    float: left;
 }
 .nav-links a {
     color: #fff;
@@ -142,6 +143,30 @@ img{
 .blog-post h3 {
     font-size: 1.5rem;
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .nav ul {
+        gap: 0.5rem;
+    }
+}
+
+
+
 .dark-footer {
     background-color: #202020;
     padding: 2rem;
@@ -157,3 +182,5 @@ img{
     text-decoration: none;
     font-size: 1rem;
 }
+
+
